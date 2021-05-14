@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar webapp-runner.jar --port $PORT jack.war
+web: java $JAVA_OPTS -jar webapp-runner.jar --port $PORT --path /jack jack.war
