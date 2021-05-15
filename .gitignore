@@ -1,0 +1,45 @@
+### Java ###
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files #
+webapp-runner.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+
+### Linux specific ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
+!/.mvn/wrapper/maven-wrapper.jar
+
+### NetBeans files ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+
+

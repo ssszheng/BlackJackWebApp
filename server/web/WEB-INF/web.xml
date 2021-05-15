@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <servlet>
+        <servlet-name>StartServlet</servlet-name>
+        <servlet-class>nz.ac.massey.cs.webtech.s_20010847.server.StartServlet</servlet-class>
+    </servlet>
+    
+    <welcome-file-list>
+        <welcome-file>blackjack.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet-mapping> 
+        <servlet-name>StartServlet</servlet-name>
+        <url-pattern>/start</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>HitServlet</servlet-name>
+        <servlet-class>nz.ac.massey.cs.webtech.s_20010847.server.HitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>HitServlet</servlet-name>
+        <url-pattern>/move/hit</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>StandServlet</servlet-name>
+        <servlet-class>nz.ac.massey.cs.webtech.s_20010847.server.StandServlet</servlet-class>
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>StandServlet</servlet-name>
+        <url-pattern>/move/stand</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>StateServlet</servlet-name>
+        <servlet-class>nz.ac.massey.cs.webtech.s_20010847.server.StateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>StateServlet</servlet-name>
+        <url-pattern>/state</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>wonServlet</servlet-name>
+        <servlet-class>nz.ac.massey.cs.webtech.s_20010847.server.wonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>wonServlet</servlet-name>
+        <url-pattern>/won</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>possiblemovesServlet</servlet-name>
+        <servlet-class>nz.ac.massey.cs.webtech.s_20010847.server.possiblemovesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>possiblemovesServlet</servlet-name>
+        <url-pattern>/possiblemoves</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>StatsServlet</servlet-name>
+        <servlet-class>nz.ac.massey.cs.webtech.s_20010847.server.StatsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>StatsServlet</servlet-name>
+        <url-pattern>/stats</url-pattern>
+    </servlet-mapping>
+    
+    
+</web-app>
