@@ -1,12 +1,15 @@
 # BlackJackWebApp
+A Java/JavaScript implementation of Black Jack game.
 
-WebApplication,Java
+## Technology: 
+J2EE- Java Servlet 
+
 ## Library: 
-Apache http client library
+Apache http client library etc.
 
 ## Server
 
-A game engine that uses the following http services. The game engine is implemented in multiple servlets providing the services.
+A game engine that uses the http services. The game engine is implemented in multiple servlets providing the services.
 The user will play the game with the computer (the dealer).
 
 Each side is dealt 2 cards, and they take turns (user first) to decide whether to hit (deal one more card) or stand (stop receiving card).
