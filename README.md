@@ -1,5 +1,5 @@
-# BlackJackWebApp
-A Java/JavaScript implementation of Black Jack game.
+# BlackJack Game Web Application
+A Java/JavaScript implementation of the BlackJack game.
 
 ## Technology: 
 J2EE- Java Servlet 
